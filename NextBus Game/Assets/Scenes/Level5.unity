@@ -200,6 +200,13 @@ MonoBehaviour:
   slideDistance: 5
   slideSpeed: 3
   delayBeforeSlide: 0.5
+  isSliding: 0
+  hasTriggered: 0
+  startPos: {x: 0, y: 0, z: 0}
+  targetPos: {x: 0, y: 0, z: 0}
+  slideProgress: 0
+  delayTimer: 0
+  waitingToSlide: 0
 --- !u!212 &7407373
 SpriteRenderer:
   serializedVersion: 2
@@ -285,6 +292,7 @@ GameObject:
   - component: {fileID: 59941458}
   - component: {fileID: 59941457}
   - component: {fileID: 59941456}
+  - component: {fileID: 59941459}
   m_Layer: 0
   m_Name: basketbal_0 (5)
   m_TagString: Untagged
@@ -304,7 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23ba6a4892ae401fa90abd837abd9d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpinInPlace
-  rotationSpeed: {x: 0, y: 0, z: 180}
+  rotationSpeed: {x: 0, y: 0, z: -180}
 --- !u!212 &59941457
 SpriteRenderer:
   serializedVersion: 2
@@ -379,6 +387,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &59941459
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59941455}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 2.62
 --- !u!1 &91165988
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,23 +871,23 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
-    - position: {x: -4.693634, y: -13.010966, z: 0}
+    - position: {x: -5.121219, y: -13.079896, z: 0}
       leftTangent: {x: 0.5359731, y: -0.0004825592, z: 0}
-      rightTangent: {x: -0.26594543, y: 0.00024223328, z: 0}
+      rightTangent: {x: -0.26594543, y: 0.00024032593, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: -4.9952154, y: -6.691167, z: 0}
-      leftTangent: {x: 0.015960693, y: -3.2025032, z: 0}
-      rightTangent: {x: -0.018041134, y: 3.6202195, z: 0}
+    - position: {x: -5.315905, y: -6.794562, z: 0}
+      leftTangent: {x: 0.015960217, y: -3.2025037, z: 0}
+      rightTangent: {x: -0.01804161, y: 3.620223, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: -4.8552465, y: 0.8800317, z: 0}
+    - position: {x: -5.342186, y: 0.91273904, z: 0}
       leftTangent: {x: 0, y: -1.4532267, z: 0}
       rightTangent: {x: -0.0018582344, y: 0.49118757, z: 0}
       mode: 2
@@ -1008,8 +1052,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 2.7092524, y: -4.4835186, z: 0}
-    m_Extent: {x: 7.7058277, y: 8.795391, z: 0}
+    m_Center: {x: 2.536447, y: -4.4835186, z: 0}
+    m_Extent: {x: 7.878633, y: 8.795391, z: 0}
   m_SpriteSortPoint: 0
 --- !u!4 &394689637
 Transform:
@@ -1158,7 +1202,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 93.3, y: 24.3, z: -10}
+  m_LocalPosition: {x: -7.799999, y: 24.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1719,13 +1763,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628470976}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.364654, w: 0.93114316}
-  m_LocalPosition: {x: 112.92, y: 25.69, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0063515753, w: 0.9999799}
+  m_LocalPosition: {x: 158.67, y: -2.21, z: 0}
   m_LocalScale: {x: 0.7086174, y: 0.75914437, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -42.773}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.728}
 --- !u!1 &723339805
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,7 +1781,7 @@ GameObject:
   - component: {fileID: 723339809}
   - component: {fileID: 723339808}
   - component: {fileID: 723339807}
-  - component: {fileID: 723339806}
+  - component: {fileID: 723339810}
   m_Layer: 0
   m_Name: basketbal_0 (3)
   m_TagString: Untagged
@@ -1745,19 +1789,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &723339806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 723339805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d23ba6a4892ae401fa90abd837abd9d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpinInPlace
-  rotationSpeed: {x: 0, y: 180, z: 0}
 --- !u!114 &723339807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1770,7 +1801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23ba6a4892ae401fa90abd837abd9d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpinInPlace
-  rotationSpeed: {x: 0, y: 0, z: 180}
+  rotationSpeed: {x: 0, y: 0, z: -180}
 --- !u!212 &723339808
 SpriteRenderer:
   serializedVersion: 2
@@ -1845,6 +1876,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &723339810
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723339805}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 2.62
 --- !u!1 &727239957
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,7 +2355,7 @@ Transform:
   m_GameObject: {fileID: 1081915464}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 83.3, y: 20.3, z: 0}
+  m_LocalPosition: {x: -17.8, y: 20.3, z: 0}
   m_LocalScale: {x: 1.6, y: 1.6, z: 1.6}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2473,7 +2540,7 @@ Transform:
   m_GameObject: {fileID: 1109289394}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 93.3, y: 24.3, z: -10}
+  m_LocalPosition: {x: -7.799999, y: 24.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2509,6 +2576,7 @@ GameObject:
   - component: {fileID: 1294810933}
   - component: {fileID: 1294810932}
   - component: {fileID: 1294810931}
+  - component: {fileID: 1294810934}
   m_Layer: 0
   m_Name: basketbal_0 (2)
   m_TagString: Untagged
@@ -2603,6 +2671,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1294810934
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294810930}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 2.62
 --- !u!1 &1375803855
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,17 +3007,41 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 34.414623, y: -16.74417, z: 0}
+    - position: {x: 34.414616, y: -16.74417, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
-      rightTangent: {x: 0.077739716, y: -1.4087296, z: 0}
+      rightTangent: {x: 0.033340454, y: -0.6041317, z: 0}
       mode: 2
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 34.756153, y: -22.919151, z: 0}
-      leftTangent: {x: 0, y: 0, z: 0}
-      rightTangent: {x: 0.421875, y: -1.38801, z: 0}
+    - position: {x: 34.56873, y: -18.115738, z: 0}
+      leftTangent: {x: -0.05486679, y: 0.99199486, z: 0}
+      rightTangent: {x: 0.04137802, y: -0.7481518, z: 0}
+      mode: 1
+      height: 1
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 37.75846, y: -18.33179, z: 0}
+      leftTangent: {x: -1.0023384, y: 0.6939602, z: 0}
+      rightTangent: {x: 0.25177765, y: -0.17397118, z: 0}
+      mode: 1
+      height: 1
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 37.946087, y: -20.233055, z: 0}
+      leftTangent: {x: -0.015079498, y: 0.79000854, z: 0}
+      rightTangent: {x: 0.019649506, y: -0.99726486, z: 0}
+      mode: 1
+      height: 1
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 38.053097, y: -22.357414, z: 0}
+      leftTangent: {x: -0.013137817, y: 0.23750305, z: 0}
+      rightTangent: {x: 0.4219017, y: -1.38801, z: 0}
       mode: 2
       height: 1
       spriteIndex: 0
@@ -3020,8 +3148,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 14.587867, y: -11.126922, z: 0}
-    m_Extent: {x: 20.168285, y: 12.6317835, z: 0}
+    m_Center: {x: 16.23634, y: -11.012593, z: 0}
+    m_Extent: {x: 21.816757, y: 12.517455, z: 0}
   m_SpriteSortPoint: 0
 --- !u!4 &1477673351
 Transform:
@@ -3329,6 +3457,7 @@ GameObject:
   - component: {fileID: 1530625029}
   - component: {fileID: 1530625028}
   - component: {fileID: 1530625027}
+  - component: {fileID: 1530625030}
   m_Layer: 0
   m_Name: basketbal_0 (1)
   m_TagString: Untagged
@@ -3348,7 +3477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23ba6a4892ae401fa90abd837abd9d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpinInPlace
-  rotationSpeed: {x: 0, y: 0, z: 180}
+  rotationSpeed: {x: 0, y: 0, z: -180}
 --- !u!212 &1530625028
 SpriteRenderer:
   serializedVersion: 2
@@ -3423,6 +3552,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1530625030
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530625026}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 2.62
 --- !u!1 &1550945089
 GameObject:
   m_ObjectHideFlags: 0
@@ -3617,6 +3782,7 @@ GameObject:
   - component: {fileID: 1585453837}
   - component: {fileID: 1585453836}
   - component: {fileID: 1585453835}
+  - component: {fileID: 1585453838}
   m_Layer: 0
   m_Name: basketbal_0
   m_TagString: Untagged
@@ -3711,6 +3877,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1585453838
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585453834}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 2.62
 --- !u!1 &1586815033
 GameObject:
   m_ObjectHideFlags: 0
@@ -4320,6 +4522,7 @@ GameObject:
   - component: {fileID: 1768027884}
   - component: {fileID: 1768027883}
   - component: {fileID: 1768027885}
+  - component: {fileID: 1768027886}
   m_Layer: 0
   m_Name: basketbal_0 (6)
   m_TagString: Untagged
@@ -4414,6 +4617,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpinInPlace
   rotationSpeed: {x: 0, y: 0, z: 180}
+--- !u!58 &1768027886
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768027882}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 2.62
 --- !u!1 &1788358727
 GameObject:
   m_ObjectHideFlags: 0
@@ -5428,6 +5667,7 @@ GameObject:
   - component: {fileID: 2028976704}
   - component: {fileID: 2028976703}
   - component: {fileID: 2028976702}
+  - component: {fileID: 2028976705}
   m_Layer: 0
   m_Name: basketbal_0 (4)
   m_TagString: Untagged
@@ -5522,6 +5762,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &2028976705
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028976701}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 2.62
 --- !u!1 &2034748876
 GameObject:
   m_ObjectHideFlags: 0
@@ -6105,7 +6381,7 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 1
     m_ControlPoints:
-    - position: {x: -3.955574, y: 0.05885935, z: 0}
+    - position: {x: -4.9841576, y: 0.05885935, z: 0}
       leftTangent: {x: -1.3506088, y: -0.042263985, z: 0}
       rightTangent: {x: 2.400444, y: 0.07511616, z: 0}
       mode: 1
@@ -6167,22 +6443,24 @@ MonoBehaviour:
   m_Creator: {fileID: 0}
   m_Modifiers: []
   m_ColliderSegment:
-  - {x: -3.9555316, y: 0.05750001}
-  - {x: -1.4483635, y: 0.14749043}
-  - {x: -0.281555, y: 0.17785586}
-  - {x: 0.55167115, y: 0.18610995}
-  - {x: 1.4737244, y: 0.18142688}
-  - {x: 3.7420967, y: 0.13808608}
-  - {x: 5.2161922, y: 0.12371002}
-  - {x: 6.825904, y: 0.116766036}
-  - {x: 9.234072, y: 0.11800009}
-  - {x: 11.277059, y: 0.1300801}
-  - {x: 13.114082, y: 0.1570903}
+  - {x: -4.984115, y: 0.05750001}
+  - {x: -2.5961707, y: 0.13400607}
+  - {x: -1.1397347, y: 0.1697734}
+  - {x: -0.14033127, y: 0.18342078}
+  - {x: 0.89223623, y: 0.18556476}
+  - {x: 1.9668885, y: 0.17333782}
+  - {x: 3.093145, y: 0.14838767}
+  - {x: 4.454744, y: 0.12990373}
+  - {x: 6.0115423, y: 0.11937428}
+  - {x: 8.4520645, y: 0.11620951}
+  - {x: 10.661465, y: 0.12506597}
+  - {x: 12.237559, y: 0.14241809}
   - {x: 14.516589, y: 0.17139803}
   - {x: 15.673174, y: 0.19618368}
   - {x: 16.27885, y: 0.2165756}
   - {x: 16.885416, y: 0.24382234}
-  - {x: 18.049095, y: 0.32344797}
+  - {x: 17.544048, y: 0.28407192}
+  - {x: 18.049095, y: 0.323448}
   - {x: 18.580156, y: 0.3781113}
   - {x: 19.06, y: 0.44419938}
   - {x: 19.47561, y: 0.5228588}
@@ -6197,7 +6475,7 @@ MonoBehaviour:
   - {x: 22.865557, y: 2.8311195}
   - {x: 23.058216, y: 3.1077268}
   - {x: 23.339958, y: 3.5838184}
-  - {x: 23.545921, y: 4.0318356}
+  - {x: 23.545925, y: 4.0318365}
   m_ShadowSegment: []
 --- !u!1971053207 &2140359895
 SpriteShapeRenderer:
@@ -6262,8 +6540,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 10.102094, y: 1.8255638, z: 0}
-    m_Extent: {x: 14.078937, y: 2.4463718, z: 0}
+    m_Center: {x: 9.587797, y: 1.8255795, z: 0}
+    m_Extent: {x: 14.593224, y: 2.4463875, z: 0}
   m_SpriteSortPoint: 0
 --- !u!4 &2140359896
 Transform:
@@ -6317,22 +6595,24 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -3.9555316, y: 0.05750001}
-  - {x: -1.4483635, y: 0.14749043}
-  - {x: -0.281555, y: 0.17785586}
-  - {x: 0.55167115, y: 0.18610995}
-  - {x: 1.4737244, y: 0.18142688}
-  - {x: 3.7420967, y: 0.13808608}
-  - {x: 5.2161922, y: 0.12371002}
-  - {x: 6.825904, y: 0.116766036}
-  - {x: 9.234072, y: 0.11800009}
-  - {x: 11.277059, y: 0.1300801}
-  - {x: 13.114082, y: 0.1570903}
+  - {x: -4.984115, y: 0.05750001}
+  - {x: -2.5961707, y: 0.13400607}
+  - {x: -1.1397347, y: 0.1697734}
+  - {x: -0.14033127, y: 0.18342078}
+  - {x: 0.89223623, y: 0.18556476}
+  - {x: 1.9668885, y: 0.17333782}
+  - {x: 3.093145, y: 0.14838767}
+  - {x: 4.454744, y: 0.12990373}
+  - {x: 6.0115423, y: 0.11937428}
+  - {x: 8.4520645, y: 0.11620951}
+  - {x: 10.661465, y: 0.12506597}
+  - {x: 12.237559, y: 0.14241809}
   - {x: 14.516589, y: 0.17139803}
   - {x: 15.673174, y: 0.19618368}
   - {x: 16.27885, y: 0.2165756}
   - {x: 16.885416, y: 0.24382234}
-  - {x: 18.049095, y: 0.32344797}
+  - {x: 17.544048, y: 0.28407192}
+  - {x: 18.049095, y: 0.323448}
   - {x: 18.580156, y: 0.3781113}
   - {x: 19.06, y: 0.44419938}
   - {x: 19.47561, y: 0.5228588}
@@ -6347,7 +6627,7 @@ EdgeCollider2D:
   - {x: 22.865557, y: 2.8311195}
   - {x: 23.058216, y: 3.1077268}
   - {x: 23.339958, y: 3.5838184}
-  - {x: 23.545921, y: 4.0318356}
+  - {x: 23.545925, y: 4.0318365}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
