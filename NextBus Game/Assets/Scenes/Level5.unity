@@ -967,7 +967,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 11400000, guid: 7bd1d6cdb5725cf45bc229d8eafe6010, type: 2}
+  m_SpriteShape: {fileID: 11400000, guid: 6bffee36858fa9c4194801b909edf1f7, type: 2}
   m_FillPixelPerUnit: 256
   m_StretchTiling: 1
   m_SplineDetail: 16
@@ -3063,7 +3063,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 11400000, guid: 7bd1d6cdb5725cf45bc229d8eafe6010, type: 2}
+  m_SpriteShape: {fileID: 11400000, guid: 6bffee36858fa9c4194801b909edf1f7, type: 2}
   m_FillPixelPerUnit: 256
   m_StretchTiling: 1
   m_SplineDetail: 16
@@ -3343,7 +3343,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 11400000, guid: 7bd1d6cdb5725cf45bc229d8eafe6010, type: 2}
+  m_SpriteShape: {fileID: 11400000, guid: 6bffee36858fa9c4194801b909edf1f7, type: 2}
   m_FillPixelPerUnit: 256
   m_StretchTiling: 1
   m_SplineDetail: 16
