@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class BusMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 50f;
+    [SerializeField] public float speed = 50f;
     [SerializeField] private Rigidbody2D front;
     [SerializeField] private Rigidbody2D back;
 

@@ -3855,11 +3855,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1089197920}
-  - component: {fileID: 1089197919}
-  - component: {fileID: 1089197918}
-  - component: {fileID: 1089197917}
-  - component: {fileID: 1089197916}
+  - component: {fileID: 1081915465}
+  - component: {fileID: 1081915466}
+  - component: {fileID: 1081915468}
+  - component: {fileID: 1081915467}
+  - component: {fileID: 1081915469}
+  - component: {fileID: 1081915470}
   m_Layer: 0
   m_Name: Closed Sprite Shape (2)
   m_TagString: Untagged
@@ -4033,6 +4034,12 @@ SpriteShapeRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089197915}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1114e5caf7c390f458536512f329e598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BusTilt
+  tiltTorque: 50
+  rb: {fileID: 1081915466}
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 0

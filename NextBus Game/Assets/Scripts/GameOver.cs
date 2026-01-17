@@ -58,7 +58,7 @@ public class GameOver : MonoBehaviour
         }
     }
 
-    void TriggerGameOver()
+    public void TriggerGameOver()
     {
         isGameOver = true;
 
