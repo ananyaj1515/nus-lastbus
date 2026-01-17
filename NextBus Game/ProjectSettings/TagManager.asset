@@ -8,6 +8,8 @@ TagManager:
   - Obstacle
   - JumpPlatform
   - death
+  - Bus
+  - Chicken
   layers:
   - Default
   - TransparentFX
@@ -15,9 +17,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Chicken
+  - Bus
+  - Road
   - 
   - 
   - 
