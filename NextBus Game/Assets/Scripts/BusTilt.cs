@@ -16,8 +16,8 @@ public class BusTilt : MonoBehaviour
         float tilt = 0f;
         var kb = Keyboard.current;
 
-        if (kb.upArrowKey.isPressed) tilt = 1f;
-        else if (kb.downArrowKey.isPressed) tilt = -1f;
+        if (kb.rightArrowKey.isPressed) tilt = 1f;
+        else if (kb.leftArrowKey.isPressed) tilt = -1f;
 
         rb.AddTorque(-tilt * tiltTorque);
     }
