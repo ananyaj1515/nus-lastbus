@@ -10,7 +10,7 @@ public class GameOver : MonoBehaviour
         float z = transform.eulerAngles.z;
         if (z > 180) z -= 360;
 
-        if (Mathf.Abs(z) > 45f)
+        if (Mathf.Abs(z) > 90f)
         {
             TriggerGameOver();
         }

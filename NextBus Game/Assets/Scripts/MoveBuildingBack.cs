@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class TriggeredGap : MonoBehaviour
+public class BuildingTrigger : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Rigidbody2D buildingRb;
     [SerializeField] private float moveDistance = 4.22f;
     [SerializeField] private float moveSpeed = 5f;
     
@@ -15,10 +15,10 @@ public class TriggeredGap : MonoBehaviour
     {
         Debug.Log($"Trigger ENTER by: {other.gameObject.name}");
         
-        if(other.gameObject.CompareTag("BackWheel") && !isMoving)
+        if(other.gameObject.CompareTag("FrontWheel") && !isMoving)
         {
-            startPos = rb.position;
-            targetPos = rb.position + Vector2.right * moveDistance;
+            startPos = buildingRb.position;
+            targetPos = buildingRb.position + Vector2.right * moveDistance;
             isMoving = true;
             moveProgress = 0f;
         }
@@ -33,13 +33,13 @@ public class TriggeredGap : MonoBehaviour
             // Smooth interpolation
             float t = Mathf.SmoothStep(0f, 1f, moveProgress);
             Vector2 newPos = Vector2.Lerp(startPos, targetPos, t);
-            rb.MovePosition(newPos);
+            buildingRb.MovePosition(newPos);
             
             // Stop when reached target
             if(moveProgress >= 1f)
             {
                 isMoving = false;
-                rb.MovePosition(targetPos); // Snap to exact position
+                buildingRb.MovePosition(targetPos); // Snap to exact position
             }
         }
     }
