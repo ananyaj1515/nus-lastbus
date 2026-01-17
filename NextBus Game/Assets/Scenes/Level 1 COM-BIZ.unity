@@ -867,9 +867,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1089bc43296de4d49b2c5f705c619528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WheelJump
-  jumpForce: 12
-  forwardBoost: 6
-  rb: {fileID: 0}
 --- !u!1 &141005561
 GameObject:
   m_ObjectHideFlags: 0
@@ -4337,7 +4334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 628f4c1fae5036b41992f12ee23475ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameOverUI
-  gameOverPanel: {fileID: 0}
+  gameOverPanel: {fileID: 2034748876}
 --- !u!114 &1081915473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5628,9 +5625,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1089bc43296de4d49b2c5f705c619528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WheelJump
-  jumpForce: 12
-  forwardBoost: 6
-  rb: {fileID: 0}
 --- !u!1 &1586815033
 GameObject:
   m_ObjectHideFlags: 0
