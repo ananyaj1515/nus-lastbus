@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 1c7e06f2cc5fcb84799d40f32587118a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4171926952000516871
+    second: computing student_0
+  - first:
+      213: -6965666193360584155
+    second: computing student_1
+  - first:
+      213: -4919455498639725746
+    second: computing student_2
+  - first:
+      213: 9031154224216196529
+    second: computing student_3
+  - first:
+      213: -8394234595964656114
+    second: computing student_4
+  - first:
+      213: -4201024256896989455
+    second: computing student_5
+  - first:
+      213: -6235266568225582460
+    second: computing student_6
+  - first:
+      213: 6461751673309465723
+    second: computing student_7
+  - first:
+      213: -1647557459011976073
+    second: computing student_8
+  - first:
+      213: -5857851325237875846
+    second: computing student_9
+  - first:
+      213: -5203505427077984093
+    second: computing student_10
+  - first:
+      213: 2093461328848915014
+    second: computing student_11
+  - first:
+      213: 2544095411169632495
+    second: computing student_12
+  - first:
+      213: 6393724887695435693
+    second: computing student_13
+  - first:
+      213: -9087373554134781926
+    second: computing student_14
+  - first:
+      213: -5698182173308776540
+    second: computing student_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: computing student_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1204
+        width: 539
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc812d7a865a16c0800000000000000
+      internalID: -4171926952000516871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computing student_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1192
+        width: 35
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5228bc8b08bf45f90800000000000000
+      internalID: -6965666193360584155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computing student_2
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1191
+        width: 43
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bac33d9459abbb0800000000000000
+      internalID: -4919455498639725746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computing student_3
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 8
+        width: 670
+        height: 1467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5cc26faea155d70800000000000000
+      internalID: 9031154224216196529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computing student_4
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1168
+        width: 34
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e066b3a0c10b18b80800000000000000
+      internalID: -8394234595964656114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computing student_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 8
+        width: 500
+        height: 1185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f60bd242b6f2b5c0800000000000000
+      internalID: -4201024256896989455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computing student_6
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1187
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4829b019712e779a0800000000000000
+      internalID: -6235266568225582460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computing student_7
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1100
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c856a39e0cca950800000000000000
+      internalID: 6461751673309465723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computing student_8
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 996
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 774cb8c5833b229e0800000000000000
+      internalID: -1647557459011976073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computing student_9
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 887
+        width: 66
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b2524814bb4bea0800000000000000
+      internalID: -5857851325237875846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computing student_10
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 879
+        width: 54
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a01338226f69c7b0800000000000000
+      internalID: -5203505427077984093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computing student_11
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 871
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a8e09acf77d0d10800000000000000
+      internalID: 2093461328848915014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computing student_12
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 838
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe0a7791c417e4320800000000000000
+      internalID: 2544095411169632495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computing student_13
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 831
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da729a2f8e21bb850800000000000000
+      internalID: 6393724887695435693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computing student_14
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 804
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10748446e923e180800000000000000
+      internalID: -9087373554134781926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computing student_15
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 772
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af877ee08dfbe0b0800000000000000
+      internalID: -5698182173308776540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      computing student_0: -4171926952000516871
+      computing student_1: -6965666193360584155
+      computing student_10: -5203505427077984093
+      computing student_11: 2093461328848915014
+      computing student_12: 2544095411169632495
+      computing student_13: 6393724887695435693
+      computing student_14: -9087373554134781926
+      computing student_15: -5698182173308776540
+      computing student_2: -4919455498639725746
+      computing student_3: 9031154224216196529
+      computing student_4: -8394234595964656114
+      computing student_5: -4201024256896989455
+      computing student_6: -6235266568225582460
+      computing student_7: 6461751673309465723
+      computing student_8: -1647557459011976073
+      computing student_9: -5857851325237875846
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
