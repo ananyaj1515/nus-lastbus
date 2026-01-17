@@ -11,10 +11,13 @@ TagManager:
   - Traffic
   - Road
   - Obstacle
-  - JumpPlatform
+  - BackWheel
+  - FrontWheel
+  - Boulder
   - death
-  - Bus
-  - Chicken
+  - JumpPlatform
+  - Professor
+  - Question
   layers:
   - Default
   - TransparentFX

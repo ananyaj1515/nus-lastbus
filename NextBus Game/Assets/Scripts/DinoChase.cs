@@ -1,20 +1,48 @@
 using UnityEngine;
+using System.Collections;
 
-public class DinoMoveAlongRoad : MonoBehaviour
+public class BusFollower : MonoBehaviour
 {
-    public float moveSpeed = 3f;
+    [SerializeField] private Rigidbody2D bus;         
+    [SerializeField] private float horizontalOffset = 5f; 
+    [SerializeField] private float followSpeed = 10f;     
+    [SerializeField] private float startDelay = 1f;       
 
-    private Vector3 moveDirection;
+    private bool canFollow = false;
 
-    void Start()
+    private void Start()
     {
-        // Use the direction the road is facing
-        moveDirection = transform.forward;
+        StartCoroutine(StartFollowingAfterDelay(startDelay));
     }
 
-   void Update()
-{
-    transform.Translate(Vector3.right * moveSpeed * Time.deltaTime, Space.World);
-}
-}
+    private IEnumerator StartFollowingAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        canFollow = true;
+    }
 
+    private void LateUpdate()
+    {
+        if (!canFollow || bus == null) return;
+
+        Vector3 targetPos = new Vector3(
+            bus.position.x - horizontalOffset,
+            bus.position.y,
+            transform.position.z
+        );
+
+        transform.position = Vector3.Lerp(transform.position, targetPos, followSpeed * Time.deltaTime);
+    }
+
+    // Call this to stop following immediately
+    public void StopFollowing()
+    {
+        canFollow = false;
+    }
+
+    // Call this to restart following after a delay
+    public void RestartFollowing(float delay)
+    {
+        StartCoroutine(StartFollowingAfterDelay(delay));
+    }
+}
