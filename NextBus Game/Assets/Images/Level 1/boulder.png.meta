@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 818b8795d5e7b444ca376f3391127ba3
+guid: c6f738682cb544ba68e5e0cbda28e389
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -103,10 +103,10 @@ TextureImporter:
       name: boulder_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 980
-        height: 980
+        x: 213
+        y: 151
+        width: 631
+        height: 617
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

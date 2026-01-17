@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6bb67aa4aa66d3b4cbdb1ef59dd3193c
+guid: 82ece330c178e42daa319e81421b16f5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6564922378478930027
-    second: uhcbuilding_0
+      213: -2462015870318232578
+    second: Gemini_Generated_Image_1gxbbz1gxbbz1gxb-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: uhcbuilding_0
+      name: Gemini_Generated_Image_1gxbbz1gxbbz1gxb-removebg-preview_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1280
-        height: 800
+        width: 610
+        height: 409
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b68cf3bee1a4b1b50800000000000000
-      internalID: 6564922378478930027
+      spriteID: efbbe4a3c9925ddd0800000000000000
+      internalID: -2462015870318232578
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      uhcbuilding_0: 6564922378478930027
+      Gemini_Generated_Image_1gxbbz1gxbbz1gxb-removebg-preview_0: -2462015870318232578
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

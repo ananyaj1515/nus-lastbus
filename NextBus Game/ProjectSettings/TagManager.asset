@@ -4,6 +4,11 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Road3
+  - Road4
+  - BusBody
+  - Back Wheel
+  - Traffic
   - Road
   - Obstacle
   - JumpPlatform
