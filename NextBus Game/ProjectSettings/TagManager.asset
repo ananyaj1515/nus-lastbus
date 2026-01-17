@@ -11,9 +11,10 @@ TagManager:
   - Traffic
   - Road
   - Obstacle
-  - BackWheel
-  - FrontWheel
-  - Boulder
+  - JumpPlatform
+  - death
+  - Bus
+  - Chicken
   layers:
   - Default
   - TransparentFX
@@ -21,9 +22,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Chicken
+  - Bus
+  - Road
   - 
   - 
   - 
