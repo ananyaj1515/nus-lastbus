@@ -14,6 +14,10 @@ TagManager:
   - BackWheel
   - FrontWheel
   - Boulder
+  - death
+  - JumpPlatform
+  - Professor
+  - Question
   layers:
   - Default
   - TransparentFX
