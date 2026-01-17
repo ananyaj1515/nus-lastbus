@@ -24,24 +24,7 @@ public class GameOver : MonoBehaviour
         float z = transform.eulerAngles.z;
         if (z > 180) z -= 360;
 
-        bool tippedOver = Mathf.Abs(z) > 90f;
-
-        // ----- Movement check -----
-        bool isNotMoving = rb.linearVelocity.magnitude < stopSpeedThreshold;
-
-        if (isNotMoving)
-        {
-            stillTimer += Time.deltaTime;
-        }
-        else
-        {
-            stillTimer = 0f;
-        }
-
-        bool stoppedTooLong = stillTimer >= stillTimeToLose;
-
-        // ----- Final condition -----
-        if (tippedOver && stoppedTooLong)
+        if (Mathf.Abs(z) > 90f)
         {
             TriggerGameOver();
         }

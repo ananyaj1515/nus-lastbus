@@ -5,7 +5,7 @@ public class PlatformDiagonal : MonoBehaviour
 {
     [Header("Movement Settings")]
     [SerializeField] private float speed = 3f;                   // movement speed
-    [SerializeField] private Vector2 direction = new Vector2(1, -1); // right & down
+    [SerializeField] private Vector2 direction = new Vector2(5, -1); // right & down
     [SerializeField] private float startDelay = 0.5f;              // delay in seconds before moving
 
     private Vector2 _normalizedDir;
@@ -27,7 +27,7 @@ public class PlatformDiagonal : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Back Wheel"))
+        if (collision.gameObject.CompareTag("BackWheel"))
         {
             // Start the delayed movement
             if (startCoroutine != null) StopCoroutine(startCoroutine);
@@ -50,7 +50,7 @@ public class PlatformDiagonal : MonoBehaviour
     // Optional: Trigger version
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Back Wheel"))
+        if (collision.CompareTag("BackWheel"))
         {
             if (startCoroutine != null) StopCoroutine(startCoroutine);
             startCoroutine = StartCoroutine(StartMovingAfterDelay());

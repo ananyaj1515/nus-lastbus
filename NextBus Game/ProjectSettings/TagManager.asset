@@ -4,13 +4,17 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Road3
+  - Road4
+  - BusBody
   - Back Wheel
   - Traffic
   - Road
   - Obstacle
-  - BackWheel
-  - FrontWheel
-  - Boulder
+  - JumpPlatform
+  - death
+  - Bus
+  - Chicken
   layers:
   - Default
   - TransparentFX
@@ -18,9 +22,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Chicken
+  - Bus
+  - Road
   - 
   - 
   - 
