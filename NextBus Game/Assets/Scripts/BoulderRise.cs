@@ -1,55 +1,43 @@
 using UnityEngine;
+using System.Collections;
 
-public class BoulderRiseTrigger : MonoBehaviour
+public class BoulderLift : MonoBehaviour
 {
-    public float riseHeight = 3f;
-    public float riseSpeed = 3f;
+    [SerializeField] private Rigidbody2D boulder;
+    [SerializeField] private float liftHeight = 3f;
+    [SerializeField] private float liftDuration = 1f;
 
-    private Transform boulder;
-    private Vector3 startPos;
-    private Vector3 targetPos;
-    private bool triggered = false;
-    private bool rising = false;
+    private bool hasLifted = false;
 
-    private Transform bus; // parent object of the FrontWheel
-
-    void Start()
+    private void OnTriggerExit2D(Collider2D other)
     {
-        boulder = GameObject.FindGameObjectWithTag("Boulder").transform;
-
-        startPos = boulder.position;
-        targetPos = startPos + Vector3.up * riseHeight;
-    }
-
-    void Update()
-    {
-        if (rising)
+        if (!hasLifted && other.CompareTag("FrontWheel"))
         {
-            boulder.position = Vector3.MoveTowards(
-                boulder.position,
-                targetPos,
-                riseSpeed * Time.deltaTime
-            );
-
-            if (Vector3.Distance(boulder.position, targetPos) < 0.01f)
-            {
-                rising = false;
-                // Optional: keep the bus parented if you want it stuck forever
-                // bus.SetParent(null);
-            }
+            StartCoroutine(LiftBoulder());
+            hasLifted = true;
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private IEnumerator LiftBoulder()
     {
-        if (!triggered && other.CompareTag("FrontWheel"))
-        {
-            triggered = true;
-            rising = true;
+        Vector2 startPos = boulder.position;
+        Vector2 targetPos = startPos + Vector2.up * liftHeight;
+        float elapsed = 0f;
 
-            // Parent the bus to the boulder
-            bus = other.transform.root;
-            bus.SetParent(boulder);
+        boulder.bodyType = RigidbodyType2D.Dynamic;
+
+        while (elapsed < liftDuration)
+        {
+            elapsed += Time.fixedDeltaTime;
+
+            // Smooth upward motion using MovePosition
+            Vector2 newPos = Vector2.Lerp(startPos, targetPos, elapsed / liftDuration);
+            boulder.MovePosition(newPos);
+
+            yield return new WaitForFixedUpdate();
         }
+
+        boulder.MovePosition(targetPos);
+        
     }
 }

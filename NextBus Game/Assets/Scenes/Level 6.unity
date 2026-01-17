@@ -2688,8 +2688,6 @@ GameObject:
   - component: {fileID: 1081915467}
   - component: {fileID: 1081915469}
   - component: {fileID: 1081915470}
-  - component: {fileID: 1081915472}
-  - component: {fileID: 1081915471}
   m_Layer: 0
   m_Name: NUSBus
   m_TagString: Untagged
@@ -2821,31 +2819,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BusTilt
   tiltTorque: 50
   rb: {fileID: 1081915466}
---- !u!114 &1081915471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081915464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fc02dcc5dd31bd438bdbfb026399632, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameOver
---- !u!114 &1081915472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081915464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 628f4c1fae5036b41992f12ee23475ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameOverUI
-  gameOverPanel: {fileID: 2034748876}
 --- !u!1 &1109289394
 GameObject:
   m_ObjectHideFlags: 0
