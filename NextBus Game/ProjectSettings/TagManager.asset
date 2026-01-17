@@ -4,12 +4,16 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Road
   - Road3
   - Road4
-  - FrontWheel
-  - BackWheel
   - BusBody
+  - Back Wheel
+  - Traffic
+  - Road
+  - Obstacle
+  - BackWheel
+  - FrontWheel
+  - Boulder
   layers:
   - Default
   - TransparentFX

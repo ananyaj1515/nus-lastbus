@@ -1,16 +1,41 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameOver : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private bool isGameOver = false;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        float z = transform.eulerAngles.z;
+        if (z > 180) z -= 360;
+
+        if (Mathf.Abs(z) > 45f)
+        {
+            TriggerGameOver();
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (isGameOver) return;
+
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            TriggerGameOver();
+        }
+    }
+
+    void TriggerGameOver()
+    {
+        isGameOver = true;
+
+        FindFirstObjectByType<GameOverUI>()?.Show();
+
+        // Stop time
+        Time.timeScale = 0f;
+
+        // Optional: disable player input
+        GetComponent<BusMovement>().enabled = false;
     }
 }
