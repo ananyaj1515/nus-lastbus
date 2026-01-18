@@ -18,6 +18,7 @@ TagManager:
   - JumpPlatform
   - Professor
   - Question
+  - Bus
   layers:
   - Default
   - TransparentFX
