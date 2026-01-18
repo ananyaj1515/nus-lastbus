@@ -18,6 +18,7 @@ TagManager:
   - JumpPlatform
   - Professor
   - Question
+  - Audio
   layers:
   - Default
   - TransparentFX
