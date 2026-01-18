@@ -9,7 +9,7 @@ public class PlatformTrigger : MonoBehaviour
     {
         if (hasTriggered) return;
 
-        if (other.CompareTag("Bus")) // or Bus
+        if (other.CompareTag("Bus") || other.CompareTag("BackWheel") || other.CompareTag("FrontWheel"))
         {
             hasTriggered = true;
             platform.StartMovingUp();
