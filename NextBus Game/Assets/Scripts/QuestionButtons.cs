@@ -13,7 +13,7 @@ public class QuestionButtons : MonoBehaviour
             {
                 // Unfreeze the bus
                 busRb.constraints = RigidbodyConstraints2D.None;
-                busRb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                //busRb.constraints = RigidbodyConstraints2D.FreezeRotation;
             }
         }
 
